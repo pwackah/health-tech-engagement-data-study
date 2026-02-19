@@ -6,7 +6,7 @@ An end-to-end data analysis project using Spreadsheets, SQL, Python, and Tableau
 ## 📊 Project Overview
 This project analyzes smart device fitness data to provide strategic marketing recommendations for **Bellabeat**, a high-tech manufacturer of health-focused products for women. Using the Google Data Analytics framework (Ask, Prepare, Process, Analyze, Share, Act), I identified key correlations between activity intensity and caloric expenditure to drive user engagement.
 
-📊 Data Scope
+## 📊 Data Scope
 To ensure high statistical power and granular insights, this analysis distinguishes between the study population and individual observations: 
 
   a. Unique Users (N=35): Represents the distinct individuals in the cohort, used for market segmentation and determining high-level audience composition.
