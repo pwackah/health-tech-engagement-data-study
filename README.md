@@ -8,14 +8,15 @@ This project analyzes smart device fitness data to provide strategic marketing r
 
 ## 📊 Data Scope
 To ensure high statistical power and granular insights, this analysis distinguishes between the study population and individual observations: 
+
 * **Unique Users (N=35):** Unique Users (N=35): Represents the distinct individuals in the cohort, used for market segmentation and determining high-level audience      composition.
 * **Total Observations (n=457):** Represents the total number of daily activity records analyzed across the study period.
   
-By utilizing the full dataset of 457 observations for correlation analysis (r=0.64), this project achieves a higher level of mathematical rigor than would be possible using user-level averages alone.
+By utilizing the full dataset of 457 observations for correlation analysis **(r=0.64)**, this project achieves a higher level of mathematical rigor than would be possible using user-level averages alone.
 
 ## 🛠️ Technical Stack
 * **SQL (BigQuery):** Data cleaning and User Segmentation via Window Functions.
-* **Python (Pandas/Seaborn):** Statistical validation and Pearson Correlation (r = 0.64).
+* **Python (Pandas/Seaborn):** Statistical validation and Pearson Correlation **(r = 0.64)**.
 * **Tableau:** Interactive dashboarding and executive-level storytelling.
 
 ## 🧪 The Scientific Challenge (Data Integrity Audit)
