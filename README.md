@@ -27,5 +27,17 @@ Coming from a **Research Science background**, I prioritized data auditing. I di
 * **The "Saturday Peak":** Highly active users show a **25%** surge in weekend activity, while sedentary users remain **flat**.
 * **Growth Target:** **40%** of the sample is currently sedentary, representing a massive market for entry-level engagement features.
 
+## Limitations & Caveats
+To maintain scientific integrity, the following constraints of the FitBit dataset and this analysis must be acknowledged:
+
+* **Demographic Specificity:** While Bellabeat’s target audience is women, the public FitBit dataset does not explicitly identify the gender or age of the 35 participants. This creates an External Validity risk; the physiological baseline of this cohort may not perfectly represent the specific metabolic profiles of Bellabeat’s primary users.
+  
+* **Nutritional Confounders:** Metabolic output is heavily influenced by caloric and macronutrient intake. This dataset lacks nutritional data, meaning the analysis cannot account for the "Thermic Effect of Food" or metabolic variations caused by pre-exercise fueling.
+  
+* **Sample Size (N=35):** While **457** observations (n) provide sufficient power for correlation analysis, the limited number of unique individuals increases the risk of **Sampling Bias**. The habits of a few highly active outliers may disproportionately influence the overall trends.
+
+*  **Study Duration:** This analysis represents a 31-day snapshot. It does not account for long-term behavioral changes, seasonal activity variations, or the longitudinal habit-formation cycles essential for a wellness coaching strategy.
+
+
 ## 🔗 Live Dashboard
 https://public.tableau.com/app/profile/prosper.ackah/viz/HealthcareDataAnalysisProject_17714843701280/FromSedentarytoActive?publish=yes
