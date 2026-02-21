@@ -6,6 +6,90 @@ An end-to-end data analysis project using **Spreadsheets, SQL, Python, and Table
 ## 📊 Project Overview
 This project analyzes smart device fitness data to provide strategic marketing recommendations for **Bellabeat**, a high-tech manufacturer of health-focused products for women. Using the Google Data Analytics framework **(Ask, Prepare, Process, Analyze, Share, Act)**, I identified key correlations between activity intensity and caloric expenditure to drive user engagement.
 
+
+# 🧬 Case Study: Identifying Growth Opportunities in Health-Tech
+**Author:** Prosper Wiredu Ackah  
+**Tools:** SQL (BigQuery), Python (Pandas/Seaborn), Tableau, Spreadsheets  
+**Data Source:** FitBit Fitness Tracker Data (CC0 Public Domain)
+
+---
+
+## 1. Ask: The Business Challenge
+The objective is to analyze how consumers use non-Bellabeat smart devices to provide high-level recommendations for Bellabeat’s marketing strategy. 
+
+**Core Questions:**
+1. What are the trends in smart device usage?
+2. How do these trends apply to Bellabeat customers?
+3. How can these trends influence Bellabeat marketing strategy?
+
+---
+
+## 2. Prepare: Data Sources & Scope
+The analysis utilizes the FitBit Fitness Tracker Data (30 days of activity data). 
+* **Population ($N$):** 35 unique users.
+* **Granularity ($n$):** 457 daily observations across the study period.
+* **Storage:** Data was processed using BigQuery for aggregation and structured in Python for statistical validation.
+
+---
+
+## 3. Process: Data Integrity & Scientific Pivot
+To maintain professional rigor, a comprehensive data audit was conducted prior to analysis.
+
+* **The Audit:** A significant **temporal mismatch** was identified between the activity logs (March–April) and the sleep/weight logs (April–May).
+* **The "Scientific Pivot":** To avoid "low-power" conclusions based on limited overlapping data, the analysis was pivoted to focus on the correlation between **Activity Intensity and Metabolic Outcomes** within the comprehensive set of 457 daily observations. This ensured the analysis was grounded in a statistically significant sample.
+* **Cleaning Procedures:** * Removed null values and duplicates in the daily activity set.
+    * Converted "ActivityDate" strings into uniform `Date` objects.
+    * Standardized column naming conventions for seamless SQL joining.
+
+---
+
+## 4. Analyze: Technical Logic & Statistical Validation
+
+### A. Feature Engineering (SQL)
+Used **SQL Window Functions** to engineer a 3-tier User Activity Index based on 31-day rolling averages:
+* **Sedentary:** < 5,000 avg steps (~40% of the sample).
+* **Fairly Active:** 5,000–10,000 avg steps.
+* **Active:** > 10,000 avg steps.
+
+### B. Statistical Rigor (Python)
+Utilized Python to mathematically validate visual trends found in the dashboard. A **Pearson Correlation Coefficient ($r$)** was calculated between "Very Active Minutes" and calories burned.
+* **Result:** **$r = 0.64$**
+* **Conclusion:** There is a strong positive correlation, proving that high-intensity effort is a more efficient metabolic driver than pure step volume.
+
+---
+
+## 5. Share: Key Behavioral Insights
+
+* **The "Saturday Peak" vs. "Mid-Week Slump":** Analysis reveals a significant activity surge on Saturdays for the **Active** group, while a recurring engagement dip occurs on **Tuesdays and Thursdays** across all segments.
+* **The Efficiency Gap:** Data proving that "Very Active Minutes" are the most efficient way for users to burn calories compared to pure step volume.
+
+---
+
+## 6. Act: Strategic Recommendations
+
+1. **Prioritize Intensity over Volume:** Shift marketing focus from "10,000 steps" to "20 Minutes of High-Intensity Activity" to align with metabolic efficiency.
+2. **Weekend Engagement:** Capitalize on the existing "Saturday Peak" with specific community challenges and rewards.
+3. **Mid-Week Recovery Triggers:** Implement notifications on Tuesdays/Thursdays to combat the identified engagement slump across all user types.
+4. **Target the Sedentary 40%:** Develop a specific "Onboarding Journey" for sedentary users that focuses on slowly increasing "Fairly Active Minutes" to build long-term habits.
+
+---
+
+## 7. Limitations & Caveats
+To maintain scientific integrity, the following constraints must be acknowledged:
+* **Demographic Specificity:** The public dataset does not explicitly identify gender or age, creating an **External Validity** risk.
+* **Nutritional Confounders:** The analysis cannot account for individual metabolic variances due to a lack of dietary data.
+* **Sample Size ($N=35$):** While 457 observations ($n$) provide sufficient power for correlation, the small cohort size increases the risk of **Sampling Bias**.
+
+---
+[LinkedIn](https://www.linkedin.com/in/p-ackah) | [Tableau Dashboard](PASTE_YOUR_TABLEAU_URL_HERE)
+
+
+
+
+
+
+
+
 ## 📊 Data Scope
 To ensure high statistical power and granular insights, this analysis distinguishes between the study population and individual observations: 
 
@@ -41,3 +125,5 @@ To maintain scientific integrity, the following constraints of the FitBit datase
 
 ## 🔗 Live Dashboard
 https://public.tableau.com/app/profile/prosper.ackah/viz/HealthcareDataAnalysisProject_17714843701280/FromSedentarytoActive?publish=yes
+
+
