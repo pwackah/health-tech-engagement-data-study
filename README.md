@@ -100,20 +100,21 @@ plt.show()
 ```
 * **Result:** **$r = 0.64$**
 * **Conclusion:** There is a strong positive correlation, proving that high-intensity effort is a more efficient metabolic driver than pure step volume.
-  
----
-🔗 Live Dashboard
-https://public.tableau.com/app/profile/prosper.ackah/viz/HealthcareDataAnalysisProject_17714843701280/FromSedentarytoActive?publish=yes
 
----
+  ---
 
 ## 5. Share: Key Behavioral Insights
 
-Before moving to strategy, the data revealed three critical patterns in user behavior:
+### Metabolic Efficiency Analysis
 ![Metabolic Efficiency Correlation](correlation_plot.png)
-* **Metabolic Efficiency:** A Pearson correlation of **r = 0.64** confirms that "Very Active Minutes" are the primary driver of calorie burn, proving intensity is more impactful than pure step volume.
-* **The "Saturday Peak" vs. "Mid-Week Slump":** Analysis shows a significant **25% activity surge** on Saturdays for active users, while a recurring engagement dip occurs on **Tuesdays and Thursdays** across all segments.
-* **The Growth Gap:** **40%** of the sample is currently categorized as **Sedentary**, representing the largest opportunity for market expansion and user retention.
+
+> **Statistical Insight:** The scatter plot above displays a **Pearson Correlation Coefficient of $r = 0.64$**. In biological data, this represents a strong positive relationship.
+
+Through exploratory data analysis, the following three behavioral pillars were identified:
+
+* **Intensity Over Volume:** $r = 0.64$ confirms that "Very Active Minutes" are the primary driver of caloric expenditure, proving intensity is more impactful than pure step volume.
+* **Segmented Engagement Trends:** Highly active users demonstrate a **25% surge** in activity on Saturdays, while a universal "Mid-Week Slump" occurs every Tuesday and Thursday across all user types.
+* **Audience Composition:** User segmentation reveals that **40%** of the current cohort is "Sedentary," marking a significant gap between current app usage and peak health activity.
 
 ---
 
